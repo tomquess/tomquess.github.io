@@ -1,5 +1,33 @@
+var aboutMe = document.getElementById('aboutMe');
+var projects = document.getElementById('projects');
+
+
+    aboutMe.style.cursor = 'pointer';
+    aboutMe.onclick = function() {
+        window.location.href = 'index.html';
+    };
+    
+    projects.style.cursor = 'pointer';
+    projects.onclick = function() {
+        window.location.href = 'index.html';
+    };
+
+
+
+
 
 $(document).ready(function(){
+
+    
+
+
+
+
+
+
+
+
+
 
 $("header").hover(
     function(){
@@ -14,10 +42,11 @@ $("header").hover(
       $('#menu').filter(':not(:animated)').animate({
         height:'50px'
       },400);
-      $('#menuOption').filter(':not(:animated)').animate({
-        height:'50px'
-      },400);
-
+      
+      $('.menuOption').filter(':not(:animated)').animate({
+        left:'33%',
+        opacity:'1'
+     },200);
 
     },
     function() {
@@ -31,10 +60,20 @@ $("header").hover(
      $('#menu').animate({
         height:'0px'
      },200);
-     $('#menuOption').animate({
-        height:'0px'
+     
+     $('.menuOption').animate({
+        left:'-1000px',
+        opacity:'0'
      },200);
 
     });
+
+
+
+
+
+
+
+
 
 });
