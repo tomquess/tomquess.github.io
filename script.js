@@ -1,3 +1,6 @@
+
+$(document).ready(function(){
+
 $("header").hover(
     function(){
       $(this).filter(':not(:animated)').animate({
@@ -33,3 +36,5 @@ $("header").hover(
      },200);
 
     });
+
+});
