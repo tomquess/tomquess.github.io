@@ -7,14 +7,14 @@ $("header").hover(
          height:'350px'
       },400);
       
-      $('#logo').animate({
+      $('#logo').filter(':not(:animated)').animate({
         height:'300px'
       },400);
 
-      $('#menu').animate({
+      $('#menu').filter(':not(:animated)').animate({
         height:'50px'
       },400);
-      $('#menuOption').animate({
+      $('#menuOption').filter(':not(:animated)').animate({
         height:'50px'
       },400);
 
