@@ -16,20 +16,12 @@ var projects = document.getElementById('projects');
 
 
 
-$(document).ready(function(){
+$(window).on("load", function(){
 
     
 
 
-
-
-
-
-
-
-
-
-$("header").hover(
+$("header").on('mouseenter',
     function(){
       $(this).filter(':not(:animated)').animate({
          height:'350px'
@@ -48,8 +40,7 @@ $("header").hover(
         opacity:'1'
      },200);
 
-    },
-    function() {
+    }).on('mouseleave', function() {
       $(this).animate({
          height:'50px'
       },200);
