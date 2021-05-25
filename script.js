@@ -9,7 +9,7 @@ var projects = document.getElementById('projects');
     
     projects.style.cursor = 'pointer';
     projects.onclick = function() {
-        window.location.href = 'index.html';
+        window.location.href = 'projects.html';
     };
 
 
