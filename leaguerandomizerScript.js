@@ -13,7 +13,7 @@ request.onload = function() {
   var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://ddragon.leagueoflegends.com/cdn/11.11.1/data/en_US/champion.json",
+    "url": "https://ddragon.leagueoflegends.com/cdn/11.11.1/data/en_US/champion.json",
     "method": "GET"
   }
 
