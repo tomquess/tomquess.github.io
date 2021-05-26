@@ -8,7 +8,9 @@ request.onload = function() {
     const champions = request.response;
     console.log(JSON.parse(champions));
   }*/
-
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
 
   var settings = {
     "async": true,
@@ -59,12 +61,20 @@ request.onload = function() {
     var slider = tns({
         container: '.my-slider',
         items: 7,
+        speed: 3000,
         //fixedWidth:120,
-        //controls:false,
-        //nav:false,
+        controls:false,
+        nav:false,
+        preventActionWhenRunning:true,
         
 
     });
-    console.log(slider.getInfo());
-    slider.play();
+    
+
+    document.querySelector('#randomizeButton').onclick = function () {
+      slider.goTo(getRandomInt(index.length));
+    };
+
+
 });
+
