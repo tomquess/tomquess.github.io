@@ -19,7 +19,7 @@
     border-bottom:black;
     border-bottom-width: 5px;
     border-bottom-style: solid;
-
+    z-index: 999;
     top:0px;
 }
 
@@ -119,6 +119,7 @@ html {
 .menuOption{
     font-family: 'Fjalla One';
     position: relative;
+    display: flex;
     font-size: 25px;
     padding-top: 5px;
     display: inline-block;
