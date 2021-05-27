@@ -61,26 +61,17 @@ request.onload = function() {
     var slider = tns({
         container: '.my-slider',
         items: 7,
-        speed: 3000,
+        speed: 15000,
         //fixedWidth:120,
         controls:false,
         nav:false,
         preventActionWhenRunning:true,
-        
-
     });
-    
 
     document.querySelector('#randButton').onclick = function () {
       slider.goTo(getRandomInt(index.length));
     };
     
-    var customizedFunction = function (info, eventName) {
-      // direct access to info object
-      console.log(info.event.type, info.container.id);
-    }
-    
-    slider.events.on('transitionEnd', customizedFunction);
 
 
 });
