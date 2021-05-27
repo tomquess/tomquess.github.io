@@ -74,6 +74,13 @@ request.onload = function() {
     document.querySelector('#randButton').onclick = function () {
       slider.goTo(getRandomInt(index.length));
     };
+    
+    var customizedFunction = function (info, eventName) {
+      // direct access to info object
+      console.log(info.event.type, info.container.id);
+    }
+    
+    slider.events.on('transitionEnd', customizedFunction);
 
 
 });

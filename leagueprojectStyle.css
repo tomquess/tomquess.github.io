@@ -10,34 +10,62 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Friz';
+    src: url('fonts/FrizQuadrataBold.eot');
+    src: url('fonts/FrizQuadrataBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FrizQuadrataBold.woff') format('woff'),
+        url('fonts/FrizQuadrataBold.ttf') format('truetype'),
+        url('fonts/FrizQuadrataBold.svg#FrizQuadrataBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 body, html {
 	padding: 0;
 	margin: 0;
-	font-family: "Fjalla one"; 
+	font-family: "Friz"; 
 }
 
 header {
-    background-color: blueviolet;
-    height: 10%;
+    background-image: url(headerImgLeagueRandomizer.jpg);
+    background-size: 100%;
+    height: 250px;
     width: auto;
     border-bottom: black 2px solid;
     margin-bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo{
     font-size:60px;
-    margin:auto;
-    padding-top: 20px;
     text-align: center;
+    height: -moz-fit-content;
+    height: -webkit-fit-content;
+    height: -fit-content;
+    color: darkgoldenrod;
+    -webkit-text-stroke: 2px black;
+    
+
 }
 .content {
     margin-top: 0;
+    margin-bottom: 0;
+    min-height: 100vh;
     height:100%;
-    min-height: 1080px;
     padding-top: 10%;
 
     background-image: url(backgroundLeagueRandomizer.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #wrapper {
     width: 50%;
