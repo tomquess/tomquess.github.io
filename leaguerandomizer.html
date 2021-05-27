@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="di4HQMggRtwpPbFQ1_IBjMTwTh3Cx8TGsOzyIyeA1gU" />
+    <meta name="description" content="A tool to pick a random League of Legends champion for you! Always up to date">
     <link rel="stylesheet" href="leagueprojectStyle.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
-    
-    
-    <title>League Randomizer</title>
-    
+
+
+    <title>League of Legends Randomizer</title>
+
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -20,16 +22,26 @@
         </div>
     </header>
     <div class="content">
-        <div id="wrapper">
-            <div id="marker">
-                
+        <div id="roulettesWindow">
+            <div id="wrapper">
+                <div id="marker">
+
+                </div>
+                <div id="roulette" class="my-slider"></div>
             </div>
-            <div id="roulette" class="my-slider"></div>
+            <div id="randButton">ROLL</div>
+            <div id="wrapperInstant">
+                <div id="markerInstant">
+
+                </div>
+                <div id="rouletteInstant" class="my-slider-instant"></div>
+            </div>
+            <div id="randButtonInstant">FAST ROLL</div>
         </div>
-        <div id="randButton">ROLL</div>
     </div>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script defer src="leaguerandomizerScript.js"></script>
-    
+
 </body>
+
 </html>
