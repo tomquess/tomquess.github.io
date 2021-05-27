@@ -51,13 +51,13 @@ header {
 #marker {
     z-index: 999;
     position: absolute;
-    top:5px;
+    top:2px;
     left:50%;
     background-color: grey;
     opacity: 0.7;
     width:6px;
-    height: 116px;
-    outline: black 2px solid;
+    height: 120px;
+    box-shadow: -1px 0px 0px 0px black, 1px 0px 0px 0px black;
 }
 
 img {
