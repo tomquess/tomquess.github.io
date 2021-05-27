@@ -71,7 +71,7 @@ request.onload = function() {
     });
     
 
-    document.querySelector('#randomizeButton').onclick = function () {
+    document.querySelector('#randButton').onclick = function () {
       slider.goTo(getRandomInt(index.length));
     };
 
